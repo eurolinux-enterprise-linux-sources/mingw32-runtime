@@ -6,7 +6,7 @@
 
 Name:           mingw32-runtime
 Version:        3.18
-Release:        1%{?dist}.1
+Release:        2%{?dist}.2
 Summary:        MinGW Windows cross-compiler runtime
 
 License:        Public Domain
@@ -65,6 +65,14 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Rebuild.
+  Related: rhbz#719866
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 3.18-1.1
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
